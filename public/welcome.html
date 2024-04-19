@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            black: "#000",
+            gray: "#9B9FA1",
+            footerColor: "#F9F9FA",
+          },
+          fontFamily: {
+            'blackOpsOne': 'Black Ops One'
+          },
+          letterSpacing: {
+            "002": "0.02em",
+          },
+          padding: {
+            '16px': '16px',
+            '18px': '18px',
+            '17px': '17px',
+            'pInput': '18px 17px',
+            '20px': '20px',
+            '75px': '75px',
+            '80px': '80px',
+            "custom": "25px 10px",
+            "custom48": "48px 0 48px 48px",
+            "customFooter": "50px 0 75px 0",
+          },
+          width: {
+            '680px': '680px',
+            '310px': '310px',
+            '430px': '430px',
+            '400px': '400px',
+          },
+          fontSize: {
+            sm: '0.8rem',
+            base: '1rem',
+            xl: '1.25rem',
+            '2xl': '1.563rem',
+            '3xl': '1.953rem',
+            '4xl': '2.441rem',
+            '5xl': '3.052rem',
+            "8": "8px",
+          }
+          
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-blackOpsOne">
+    <aside class="flex justify-center items-center bg-slate-950 w-full h-9">
+        <p class="text-slate-50 tracking-wide text-xs">WORLDWIDE SHIPPING AVAILABLE! FREE ON ORDERS OVER $350</p>
+    </aside>
+    
+    <div class="w-full max-w-screen-xl mx-auto pb-80px">
+    
+
+
+
+      <!-- navbarMenu -->
+      <div class="flex items-center justify-between pt-16px pb-20px">
+        
+          <div class="flex gap-6 list-none w-400px">
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">WOMAM</a></li>
+            <li><a href="#">STORES</a></li>
+            <li><a href="#">ABOUT THE BRAND</a></li>
+          </div>
+
+          <div class="flex ">
+            <a href="/">
+              <img src="icon/logo.svg" alt="">
+            </a>
+          </div>
+          
+          <div class="flex gap-3 w-400px justify-end">
+            <a href=""><img src="icon/language.svg" alt=""></a>
+            <a href="" class="relative
+                             after:absolute 
+                             after:content-['12']
+                             after:bottom-0 
+                             after:-right-0.5
+                             after:bg-red-600
+                             after:w-4
+                             after:aspect-square
+                             after:rounded-full
+                             after:text-8
+                             after:flex
+                             after:justify-center
+                             after:items-center
+            " data-likes="2">
+              <img src="icon/like.svg" alt="" >
+            </a>
+            <a href="/profile"><img src="icon/user.svg" alt=""></a>
+            <a href=""><img src="icon/buy.svg" alt=""></a>
+          </div>
+          
+      </div>
+
+
+
+
+      <!-- Select category -->
+      <section class="mt-16">
+        <h1 class="text-center text-xl text-slate-950 tracking-002">Select category</h1>
+        <div class="flex gap-4 mt-8">
+          <!-- hover -->
+          <a href="#">
+            <img src="icon/Main → Section → Link.png" alt=""  >
+          </a>
+          <!-- hover -->
+          <a href="">
+            <img src="icon/Main → Section → Link (1).png" alt="">
+          </a>
+        </div>
+      </section>
+
+
+
+      <!-- bred -->
+      <div class="text-center pt-75px w-680px mx-auto pb-80px">
+        <h2>Bat Norton®'s mission is to empower creative individuals to express themselves
+          through comfortable and stylish clothing.</h2>
+      </div>
+      
+
+
+      <div class="flex justify-center text-center text-sm pb-80px">
+        <div class="w-310px border p-custom">
+          <img src="icon/galka.svg" alt="" class="mx-auto">
+          <h4 class="mt-4">UNIQUE DESIGN</h4>
+        </div>
+        <div class="w-310px border p-custom">
+          <img src="icon/galka.svg" alt="" class="mx-auto">
+          <h4 class="mt-4">OWN PRODUCTION</h4>
+        </div>
+        <div class="w-310px border p-custom ">
+          <img src="icon/galka.svg" alt="" class="mx-auto">
+          <h4 class="mt-4">WORLDWIDE SHIPPING</h4>
+        </div>
+      </div>
+
+
+      <!-- chto-to novoe -->
+      <div class="bg-black relative ">
+        <img src="icon/tttp.svg" alt="" class="absolute t-0 right-0">
+        <div class="p-custom48">
+          <div class="">
+            <h2 class="text-white pb-8 uppercase w-430px">
+              Subscribe to our newsletter and get a 10% discount on your next order
+            </h2>
+          </div>
+          <div class="flex">
+            <div class="">
+              <input type="email" placeholder="YOUR E-MAIL" class="bg-black border border-gray text-gray text-sm p-pInput w-400px">
+            </div>
+            <button class="bg-white p-20px"><img src="icon/right.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+
+
+  <!-- footer -->
+  <footer class="bg-footerColor flex justify-center gap-16 text-center items-center list-none p-customFooter text-xs">
+    <li class="text-gray">©2009-2023. All rights reserved</li>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">Information</a></li>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#"><img src="icon/photo.svg" alt=""></a></li>
+    <li><a href="#">info@batnorton.com</a></li>
+  </footer>
+
+</body>
+</html>

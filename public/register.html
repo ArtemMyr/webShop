@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            black: "#000",
+            gray: "#9B9FA1",
+            footerColor: "#F9F9FA",
+          },
+          fontFamily: {
+            'blackOpsOne': 'Black Ops One'
+          },
+          letterSpacing: {
+            "002": "0.02em",
+          },
+          padding: {
+            '16px': '16px',
+            '18px': '18px',
+            '17px': '17px',
+            'pInput': '18px 17px',
+            '20px': '20px',
+            '25px': '25px',
+            '75px': '75px',
+            '80px': '80px',
+            "custom": "25px 10px",
+            "custom48": "48px 0 48px 48px",
+            "customFooter": "50px 0 75px 0",
+          },
+          width: {
+            '680px': '680px',
+            '310px': '310px',
+            '430px': '430px',
+            '400px': '400px',
+            '500px': '500px',
+          },
+          fontSize: {
+            sm: '0.8rem',
+            base: '1rem',
+            xl: '1.25rem',
+            '2xl': '1.563rem',
+            '3xl': '1.953rem',
+            '4xl': '2.441rem',
+            '5xl': '3.052rem',
+            "8": "8px",
+          }
+          
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body class="font-blackOpsOne">
+    <aside class="flex justify-center items-center bg-slate-950 w-full h-9">
+        <p class="text-slate-50 tracking-wide text-xs">WORLDWIDE SHIPPING AVAILABLE! FREE ON ORDERS OVER $350</p>
+    </aside>
+    
+    <div class="w-full max-w-screen-xl mx-auto pb-80px">
+    
+
+
+
+      <!-- navbarMenu -->
+      <div class="flex items-center justify-between pt-16px pb-75px">
+        
+          <div class="flex gap-6 list-none w-400px">
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">WOMAM</a></li>
+            <li><a href="#">STORES</a></li>
+            <li><a href="#">ABOUT THE BRAND</a></li>
+          </div>
+
+          <div class="flex ">
+            <a href="welcome.html">
+              <img src="icon/logo.svg" alt="">
+            </a>
+          </div>
+          
+          <div class="flex gap-3 w-400px justify-end">
+            <a href=""><img src="icon/language.svg" alt=""></a>
+            <a href="" class="relative
+                             after:absolute 
+                             after:content-['12']
+                             after:bottom-0 
+                             after:-right-0.5
+                             after:bg-red-600
+                             after:w-4
+                             after:aspect-square
+                             after:rounded-full
+                             after:text-8
+                             after:flex
+                             after:justify-center
+                             after:items-center
+            " data-likes="2">
+              <img src="icon/like.svg" alt="" >
+            </a>
+            <a href=""><img src="icon/user.svg" alt=""></a>
+            <a href=""><img src="icon/buy.svg" alt=""></a>
+          </div>
+          
+      </div>
+
+
+
+
+      <!-- registerFORM -->
+      <div class="">
+        <div class="">
+          <h1 class="text-center text-2xl p-20px">Register</h1>
+
+
+          <div class="flex justify-center">
+
+            <form action="/register" class=" w-500px text-gray" method="POST">
+                <div class="mb-5 flex flex-col">
+                  <label for="">NAME,SURNAME</label>
+                  <input type="text" placeholder="Ivan Ivanov" class="p-2.5 border" name="loginL">
+                </div>
+                
+                <div class="mb-5 flex flex-col">
+                  <label for="">EMAIL</label>
+                  <input type="email" placeholder="ivan.ivanov@gamil.com" class="p-2.5 border" name="emailL">
+                </div>
+
+                <div class="mb-5 flex flex-col">
+                  <label for="">PASSWORD</label>
+                  <input type="password"  class="p-2.5 border" name="passwordL">
+                </div>
+
+                <div class="mb-5 flex flex-col">
+                  <label for="">CONFIRM PASSWORD</label>
+                  <input type="password"  class="p-2.5 border" name="RepeatPassword">
+                </div>
+                
+                
+                <div class="flex gap-5 mb-2">
+                  <input type="checkbox" >
+                  <label for="">I ACCEPT <a href="#">PRIVACY POLICY</a></label>
+                </div>
+                <div class="flex items-center gap-5 w-500px mb-5">
+                  <input type="checkbox">
+                  <label for="" class="uppercase">Leave us your e-mail address and stay informed about our discounts and special offers</label>
+                </div>
+                
+
+                <div class="flex justify-between">
+                  <button class="border bg-black p-16px text-white" type="submit">
+                    REGISTER
+                  </button>
+                  <button class="text-black">
+                    <a href="login.html">AUTHORIZE</a>
+                  </button>
+                </div>
+  
+            </form>
+
+          </div>
+
+        </div>
+        <div class="">
+
+        </div>
+      </div>
+
+
+
+
+
+
+      
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-footerColor flex justify-center gap-16 text-center items-center list-none p-customFooter text-xs">
+    <li class="text-gray">©2009-2023. All rights reserved</li>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">Information</a></li>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#"><img src="icon/photo.svg" alt=""></a></li>
+    <li><a href="#">info@batnorton.com</a></li>
+  </footer>
+</body>
+</html>
